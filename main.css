@@ -1,0 +1,568 @@
+/*Core styles*/
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /*Menyuni shriftini qalinlashtirdik*/
+}
+
+.container {
+    width: 1140px;
+    /*bu class butun menyularni markazlashtiradi*/
+    margin: 0 auto;
+}
+
+.main-section__w {
+    text-transform: uppercase;
+}
+
+.clearfix {
+    clear: both;
+    /*ikki tomondan ustma ust sizib chiqishni oldini oladi*/
+}
+
+.section-subtitle {
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #797979;
+    text-transform: uppercase;
+    /* katta harlash*/
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    /*har bir suzni bosh harfini katalashtirish*/
+    color: #05364D;
+}
+
+.button {
+    border: none;
+    /*chegaraga ega emas*/
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 20px 40px;
+    /*tepa va pasti va chap va ongidan joy tashlandi*/
+    cursor: pointer;
+    border-radius: 5px;
+    /*buttonni atrofini qiyalash*/
+}
+
+.button:hover {
+    background-position: right center;
+    transition: 0.5s;
+}
+
+.blur-line {
+    display: inline-block;
+    /*width kenglik bera olish uchun shu elementni qoshdik*/
+    margin-left: 5px;
+    width: 80px;
+    height: 8px;
+    background-color: rgba(237, 35, 159, 0.6);
+    filter: blur(4px);
+    /*rangli chizigimizni bijirlatib blur korsatish*/
+    border-radius: 4px;
+
+}
+
+/*Main header styles*/
+.main-header {
+    position: fixed;
+    /* bu qiymat bilan menyu elementlarni doim kurinadigan qolatga olib keldik*/
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px rgb(0 0 0 / 10%);
+    /*mwnyuni pastida shadow hosil qildik*/
+    z-index: 10;
+    /*header qismini barcha itemlarda ustida kursatish*/
+}
+
+.main-header__brand {
+    display: inline-block;
+    /*faqat uzini kengligiga egalik qilish*/
+    vertical-align: middle;
+}
+
+.main-header__brand img {
+    width: 80px;
+}
+
+.main-navigation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-navigation__item {
+    display: inline-block;
+    padding: 10px;
+    /*atrofidan joy qoldirish*/
+}
+
+.main-navigation__item a {
+    color: #05364d;
+    text-decoration: none;
+    /*tagidagi chiziqni olib tashlash*/
+    text-transform: uppercase;
+    /*harflarni katta harflarga ozgartirish*/
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.main-navigation__item a:hover {
+    color: #4689c9;
+}
+
+/*ustiga sichqoncha olib kelganda rangi korsatilgan ranga ozgarishi uchun hoverni ishlatik*/
+
+.main-navigation__item.active a {
+    color: #4689c9;
+}
+
+/*active orqali asosiy menyuni birinchisini doimiy activ ranga uzgartirdik*/
+
+/*Main section*/
+.main-banner {
+    background: url('../Images/back2.PNG') no-repeat center;
+    color: white;
+    background-position: 400px center;
+    background-size: contain;
+    min-height: 600px;
+
+}
+
+.main-section {
+    padding: 100px 30px;
+}
+
+.main-section>div {
+    width: 50%;
+    float: left;
+}
+
+.main-section__image img {
+    width: 450px;
+    border-radius: 40%;
+
+}
+
+.main-section__welcome {
+    font-size: 16px;
+    /*harflar kataligi*/
+    font-weight: 400;
+    /*harflar qalinligi*/
+    margin-bottom: 20px;
+    /*pastidan joy tashlandi*/
+    letter-spacing: 2px;
+    /*harflar orasidagi masofa*/
+    color: #797979;
+}
+
+.main-section__introduction {
+    margin-top: 20px0;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #05364E;
+}
+
+.main-section__position {
+    color: #05364E;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main-section__social-networks a {
+    color: #8FA1AA;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+    /* sichqonchani icon ustiga olib borganda barmoq korinishiga uzgarishi*/
+}
+
+.main-section__social-networks a:hover i {
+    color: #1C44E4;
+}
+
+.main-section__action {
+    margin-top: 30px;
+}
+
+/*Statistics section*/
+
+.statistics {
+    padding-top: 70px;
+    padding-left: 200px;
+}
+
+.statistics__item {
+    display: inline-block;
+    width: 150px;
+    background-color: #f8faff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-right: 20px;
+}
+
+.statistics__number {
+    font-size: 27px;
+    margin-top: 5px;
+    background: linear-gradient(98deg, #1345e6 0%, #ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statistics__title {
+    font-size: 16px;
+    color: #797979;
+    font-weight: 300;
+}
+
+/*About me*/
+.about-me {
+    padding: 100px 0;
+}
+
+.about-me>div {
+    width: 50%;
+    float: left
+}
+
+.about-me__image img {
+    width: 60%;
+    padding-left: 100px;
+}
+
+.about-me__description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #797979;
+    line-height: 27px;
+    /*har bir matn orasidagi masofa*/
+}
+
+.about-me__action {
+    margin-top: 40px;
+}
+
+/*Services section tyles*/
+
+.services {
+    padding-top: 100px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    padding: 60px 30px;
+    background-color: #F8FAFF;
+    text-align: center;
+    box-sizing: border-box;
+    /*uchta cartamiz 30% width berganimizda 90%
+    bolayabdi va pading ikki yonidan 30px qoldirganimizda 100% oshib keti
+    shu holara box-sizing ishlatib hammasini bir qatorga sigdirdik*/
+}
+
+.service-card__title {
+    color: #05364D;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.service-card__description {
+    font-size: 14px;
+    line-height: 27px;
+    /* linyalar(matnlar) orasidagi masofa*/
+    font-weight: 300;
+    color: #797979;
+}
+
+.service-card__link {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364D;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    background-color: #5f30ff;
+    transition: background-color 0.5s;
+}
+
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__description,
+.service-card:hover .service-card__link {
+    color: #FFFFFF;
+}
+
+.service-card__icon {
+    width: 100px;
+}
+
+/*Clients section styles*/
+
+.clients {
+    padding-top: 100px;
+}
+
+.client-item>div {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.client-item__image img {
+    width: 100%;
+}
+
+.client-item__info {
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.client-item__name {
+    font-size: 20px;
+    margin-bottom: 4px;
+
+}
+
+.client-item__position {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5d6d75;
+}
+
+.client-item__review {
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #5d6d75;
+}
+
+.client-item__rate {
+    color: #FFD805;
+}
+
+.client-item__rate .rate-disabled {
+    color: #AEB9BE;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    padding: 100px 0;
+}
+
+.portfolio-filters {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.portfolio-filters li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.active {
+    color: #4689c9;
+}
+
+.portfolio-items {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 450px;
+}
+
+.portfolio-item {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolio-item-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-item-2 {
+    position: absolute;
+    top: 30px;
+    right: 520px;
+}
+
+.portfolio-item-3 {
+    position: absolute;
+    top: 0;
+    right: 265px;
+}
+
+.portfolio-item-4 {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.portfolio-item img {
+    height: 500px;
+    width: 350px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 1);
+    transition: 0.6s;
+}
+
+.portfolio-item__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20%;
+    width: 120%;
+    background: rgba(57, 56, 56, 0.705);
+    visibility: hidden;
+}
+
+.portfolio-item__info {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: white;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.portfolio-item__info a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    top: 380px;
+    left: 20px;
+    z-index: 1;
+}
+
+.portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
+    z-index: 1;
+}
+
+.portfolio-item:hover .portfolio-item__image {
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+/*Blog section*/
+.blog {
+    padding-top: 100px;
+}
+
+.blog-items {
+    margin-top: 50px;
+}
+
+.blog-item {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.blog-item:hover {
+    box-shadow: 0px 10px 20px rgb(5 54 74 / 10%);
+}
+
+.blog-item:hover .blog-item__info {
+    background-color: white; /*blog item korsatilganda blog itemdagi info qismini orqa foni oq boladi*/
+}
+
+.blog-item__image img {
+    width: 100%;
+}
+
+.blog-item__info {
+    background-color: #f6f6f6;
+    padding: 10px;
+    color: #888888;
+}
+
+.blog-item__main-info span {
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: lighter;
+}
+
+.blog-item__info i {
+    margin-right: 5px;
+}
+
+.blog-item__title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #05364d;
+    font-weight: 700;
+}
+
+.blog-item__description {
+    line-height: 27px; /*matnlar qatori orasidagi balandligi*/
+    font-weight: 400; /*harf qalinligi*/
+    font-size: 15px;
+    width: 300px;
+    height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+
+}
+
+.blog-item__learn-more {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #05364d;
+    cursor: pointer;
+}
+
+.blog-item__learn-more:hover {
+    color: #ed239f;
+}
+
+/*partner section syles*/
+.partners {
+    padding-top: 100px;
+}
+
+.partner {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.partner img {
+    width: 250px; 
+    height: 80px;
+}
+
