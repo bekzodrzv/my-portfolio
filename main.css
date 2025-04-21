@@ -130,7 +130,7 @@ body {
 
 /*Main section*/
 .main-banner {
-    background: url('../Images/back2.PNG') no-repeat center;
+    background: url('back2.PNG') no-repeat center;
     color: white;
     background-position: 400px center;
     background-size: contain;
