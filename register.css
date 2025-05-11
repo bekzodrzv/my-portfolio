@@ -1,0 +1,143 @@
+/*Ro`yhatdan otish qismi*/
+
+.register {
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    height: auto;
+    padding: 60px;
+    padding-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #f2f3f2 0%, #a4ccd8 100%);
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.button {
+    margin: 30px auto;
+    width: 50%;
+    display: block;
+    border: none;/*chegaraga ega emas*/
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    color: white;
+    padding: 10px 30px;/*tepa va pasti va chap va ongidan joy tashlandi*/
+    cursor: pointer;
+    border-radius: 5px;/*buttonni atrofini qiyalash*/
+    
+}
+
+.button:hover {
+    background-position: right center;
+    transition: 0.5s;
+}
+
+.boshi {
+    padding-top: 15px;
+    display: block;
+}
+
+/*radio button belgi quyish styke qusmi*/
+
+.form-control {
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-control2 {
+    margin-left: 20px;
+}
+
+.form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #5b5b5b;
+    border-radius: 50%;
+}
+
+.form-control:hover input~.custom-radio {
+    background-color: #959595;
+    /* radiobutton korsatilganda toqroq ranga ozgarishi*/
+}
+
+.form-control input:checked~.custom-radio {
+    background-color: #3e5151;
+    /*faqat cheked bulganda rangi to`q ranga otishi*/
+}
+
+.custom-radio:after {
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-control input:checked~.custom-radio::after {
+    display: block;
+}
+
+/*check box bolimiga stil berish*/
+
+.custom-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #626262;
+}
+
+.form-control:hover input~.custom-check {
+    background-color: #959595;
+    /* radiobutton korsatilganda toqroq ranga ozgarishi*/
+}
+
+.form-control input:checked~.custom-check {
+    background-color: #3e5151;
+    /*faqat cheked bulganda rangi to`q ranga otishi*/
+}
+
+.form-control input:checked~.custom-check:after {
+    display: block;
+}
+
+.custom-check:after {
+    /*checkboxni ichidagi ptichkani shu usulda yasab urnatdik*/
+    top: 1px;
+    left: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}

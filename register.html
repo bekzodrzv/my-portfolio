@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Shift + Alt + F qatorlarni tartiblash-->
+
+<head>
+    <title>Portfolio-bo'lanish</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg" href="./Images/logobek2.JPG"><!--sahiifani ustidagi icon-->
+</head>
+
+<body>
+    <!--Header section-->
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__brand">
+                <a href="index.html">
+                    <img src="./Images/logobek.jpg">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item active">
+                        <a href="index.html">Asosiy</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Xizmatlar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="./contact.html">Bog'lanish</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section class="register">
+            <div class="section-title">
+                회원가입입
+            </div>
+            <form action="/server.php" method="GET">
+                
+                <label for="firsname">Firstname</label>
+                <input type="text" id="firsname" name="firsname" placeholder="이름을 입력하세요">
+
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="성을 입력하세요">
+
+                <!--radiobox-->
+                
+                <p class="gender">성별</p>
+                <label class="form-control">남자
+                    <input type="radio" checked="checked" name="radio" value="radio-1">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control form-control2">여자
+                    <input type="radio" checked="checked" name="radio" value="radio-1">
+                    <span class="custom-radio"></span>
+                </label> 
+
+
+                <label for="country" class="boshi">국가</label>
+                <select name="country" id="country" class="country">
+                    <option value="uzbekistan">O`zbekiston</option>
+                    <option value="russia">대한민국</option>
+                    <option value="usa">AQSH</option>
+                </select>
+
+                <label for="message">메시지</label>
+                <textarea name="message" id="message" placeholder="메시지를 남겨주세요"></textarea>
+
+                <!--checkboxs-->
+
+                <p class="check">사용 가능한 언어</p>
+                <label class="form-control">O'zbek tili
+                    <input type="checkbox" checked="checked" name="checkbox" value="checkbox-1">
+                    <span class="custom-check"></span>
+                </label>
+                <label class="form-control form-control2">영어어
+                    <input type="checkbox" checked="checked" name="checkbox" value="checkbox-2">
+                    <span class="custom-check"></span>
+                </label>
+                <label class="form-control form-control2">러시아어어
+                    <input type="checkbox" checked="checked" name="checkbox" value="checkbox-1">
+                    <span class="custom-check"></span>
+                </label>
+                <label class="form-control form-control2">한국어어
+                    <input type="checkbox" checked="checked" name="checkbox" value="checkbox-2">
+                    <span class="custom-check"></span>
+                </label>
+
+                <button type="submit" class="button">보내기</button>
+            </form>
+        </section>
+    </div>
+    <!--/Header section-->
+
+
+    <!--Footer section-->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Asosiy</a>
+                </li>
+                <li>
+                    <a href="#">Men haqimda</a>
+                </li>
+                <li>
+                    <a href="#">Xizmatlar</a>
+                </li>
+                <li>
+                    <a href="#">Mijozlar</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Sheriklar</a>
+                </li>
+
+            </ul>
+        </nav>
+    </footer>
+    <!--/Footer section-->
+
+
+</body>
+
+</html>

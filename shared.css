@@ -1,0 +1,131 @@
+
+/*Core styles*/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /*Menyuni shriftini qalinlashtirdik*/
+}
+
+.container {
+    width: 1140px;
+    /*bu class butun menyularni markazlashtiradi*/
+    margin: 0 auto;
+}
+
+.main-section__w {
+    text-transform: uppercase;
+}
+
+.clearfix {
+    clear: both;
+    /*ikki tomondan ustma ust sizib chiqishni oldini oladi*/
+}
+
+.section-subtitle {
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #797979;
+    text-transform: uppercase;
+    /* katta harlash*/
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    /*har bir suzni bosh harfini katalashtirish*/
+    color: #05364D;
+}
+
+.button {
+    border: none;
+    /*chegaraga ega emas*/
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 20px 40px;
+    /*tepa va pasti va chap va ongidan joy tashlandi*/
+    cursor: pointer;
+    border-radius: 5px;
+    /*buttonni atrofini qiyalash*/
+}
+
+.button:hover {
+    background-position: right center;
+    transition: 0.5s;
+}
+
+.blur-line {
+    display: inline-block;
+    /*width kenglik bera olish uchun shu elementni qoshdik*/
+    margin-left: 5px;
+    width: 80px;
+    height: 8px;
+    background-color: rgba(237, 35, 159, 0.6);
+    filter: blur(4px);
+    /*rangli chizigimizni bijirlatib blur korsatish*/
+    border-radius: 4px;
+}
+
+/*Main header styles*/
+.main-header {
+    position: fixed;
+    /* bu qiymat bilan menyu elementlarni doim kurinadigan qolatga olib keldik*/
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px rgb(0 0 0 / 10%);
+    /*mwnyuni pastida shadow hosil qildik*/
+    z-index: 10;
+    /*header qismini barcha itemlarda ustida kursatish*/
+}
+
+.main-header__brand {
+    display: inline-block;
+    /*faqat uzini kengligiga egalik qilish*/
+    vertical-align: middle;
+}
+
+.main-header__brand img {
+    width: 80px;
+}
+
+.main-navigation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-navigation__item {
+    display: inline-block;
+    padding: 10px;
+    /*atrofidan joy qoldirish*/
+}
+
+.main-navigation__item a {
+    color: #05364d;
+    text-decoration: none;
+    /*tagidagi chiziqni olib tashlash*/
+    text-transform: uppercase;
+    /*harflarni katta harflarga ozgartirish*/
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.main-navigation__item a:hover {
+    color: #4689c9;
+}
+
+/*ustiga sichqoncha olib kelganda rangi korsatilgan ranga ozgarishi uchun hoverni ishlatik*/
+
+.main-navigation__item.active a {
+    color: #4689c9;
+}
+
+/*active orqali asosiy menyuni birinchisini doimiy activ ranga uzgartirdik*/
+
