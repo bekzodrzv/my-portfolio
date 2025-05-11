@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,25 +25,31 @@
             <nav class="main-navigation">
                 <ul class="main-navigation__items">
                     <li class="main-navigation__item active">
-                        <a href="#">Asosiy</a>
+                        <a href="index.html">메인</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Men haqimda</a>
+                        <a href="#">나의소게</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Xizmatlar</a>
+                        <a href="#">서비스</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Mijozlar</a>
+                        <a href="#">우리 고객님</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Portfolio</a>
+                        <a href="#">포트폴폴리어</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Blog</a>
+                        <a href="#">블로그</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Sheriklar</a>
+                        <a href="#">비즈니스 파트너너</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="./contact.html">문의하기</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="./register.html">회원가입</a>
                     </li>
 
                 </ul>
@@ -56,9 +63,10 @@
         <div class="main-banner">
             <section id="main-section" class="main-section">
                 <div class="main-section__info">
-                    <h4 class="main-section__welcome main-section__w">Hush kelibsiz!</h4>
+                    <h4 class="main-section__welcome main-section__w">방문을 환영합니다!</h4>
                     <h1 class="main-section__introduction main-section__w">I am Ruziev</h1>
-                    <h3 class="main-section__position main-section__w">Junior(kichik) dasturchi & Vlogger</h3>
+                    <h3 class="main-section__position main-section__w">SW 엔지니어어,안드로이드, 웹개발자자</h3>
+                    <h4 class="main-section__welcome main-section__w">참고: 이 웹사이트는 학습 목적을 위해 제작되었습니다.</h4>
                     <div class="main-section__social-networks">
                         <a href="https://t.me/Bkruzi">
                             <i class="fa-brands fa-telegram"></i>
@@ -71,11 +79,11 @@
                         </a>
                     </div>
                     <button type="button" class="button main-section__action main-section__w">
-                        Ishlarimni ko`ring
+                        포트폴리오 보기
                     </button>
                 </div>
                 <div class="main-section__image">
-                    <img src="photo_2025-04-18_05-45-45-removebg-preview.png" alt="My image">
+                    <img src="600x900.png" alt="My image">
                 </div>
             </section>
             <div class="clearfix"></div>
@@ -91,7 +99,7 @@
                     15+
                 </h3>
                 <p class="statistics__title">
-                    Hursand mijozlar
+                    고객만족
                 </p>
             </div>
             <div class="statistics__item">
@@ -99,7 +107,7 @@
                     12+
                 </h3>
                 <p class="statistics__title">
-                    Yordam
+                    도움
                 </p>
             </div>
             <div class="statistics__item">
@@ -107,7 +115,7 @@
                     9/10
                 </h3>
                 <p class="statistics__title">
-                    O`rtacha reyting
+                    평균평점
                 </p>
             </div>
         </section>
@@ -121,19 +129,22 @@
             </div>
             <div class="about-me__info">
                 <h5 class="section-subtitle">
-                    Men haqimda
+                    자기소개
                     <span class="blur-line"></span>
                 </h5>
                 <h3 class="section-title">
-                    Junior (kichik) dasturchi
+                    소프트웨어 개발자
                 </h3>
                 <p class="about-me__description">
-                    Mening ismim Bekzod va men 32 yoshdaman. Dasturchiman (2014 - 2018) yillarda
-                    Janubiy Koreyadagi nufuzli Chonnam national unvercityda software
-                    yo`nalishini bakalavr darajasini tamomladim.
+                    저는 창의적인 문제 해결 능력과 책임감을 가진 소프트웨어 엔지니어입니다. 
+                    전남대학교에서 소프트웨어공학을 전공하며 다양한 프로젝트를 통해 팀워크와 개발 역량을 쌓았습니다. 
+                    특히 안드로이드 애플리케이션 개발에 흥미가 많아 졸업 프로젝트로 'SOS Red Button'이라는 앱을 직접 개발하였습니다. 
+                    한국어 TOPIK 5급 자격을 보유하고 있으며, 한국에서의 12년 거주 경험을 통해 한국 문화와 업무 환경에 대한 이해도가 높습니다. 
+                    앞으로도 기술 역량을 바탕으로 회사에 기여하고 지속적으로 성장하고 싶습니다..
                 </p>
                 <button type="button" class="button to-uppercase about-me__action">
-                    CV ko`chirib olish
+                    <a href="./resume.pdf"></a>
+                    이력서 다운로드
                 </button>
             </div>
         </section>
@@ -145,45 +156,40 @@
     <div class="container">
         <section id="services" class="services">
             <h5 class="section-subtitle">
-                Mening xizmatlarim
+                나의 서비스
                 <span class="blur-line"></span>
             </h5>
             <h2 class="section-title">
-                Men taklif<br>
-                qiladigan xizmatlar
+                제가 제공하는 서비스
             </h2>
             <div class="services__cards">
                 <div class="service-card">
                     <img class="service-card__icon" src="serviceicon1.png" alt="Service 1">
-                    <h5 class="service-card__title">Veb dasturlash</h5>
+                    <h5 class="service-card__title">웹 개발 (Web Development)</h5>
                     <p class="service-card__description">
-                        Savollaringizga to`liq javoblar va birinchi veb saytingizni yaratish uchun kerak bo`ladigan
-                        barcha resurslar
+                        프론트엔드 개발, 사용자 인터페이스(UI) 만들기 (HTML, CSS, JavaScript)
                     </p>
                     <a href="#" class="service-card__link">
-                        Ko`proq
+                        더 보기
                     </a>
                 </div>
                 <div class="service-card">
                     <img class="service-card__icon" src="webicon.png" alt="Service 1">
-                    <h5 class="service-card__title">Veb dasturlash</h5>
+                    <h5 class="service-card__title">모바일 앱 개발 (Mobile App D)</h5>
                     <p class="service-card__description">
-                        Savollaringizga to`liq javoblar va birinchi veb saytingizni yaratish uchun kerak bo`ladigan
-                        barcha resurslar
+                        안드로이드 개발, 안드로이드 앱 만들기 (Java, Kotlin, Android Studio)
                     </p>
                     <a href="#" class="service-card__link">
-                        Ko`proq
+                        더 보기
                     </a>
                 </div>
                 <div class="service-card">
                     <img class="service-card__icon" src="partnericon.png" alt="Service 1">
-                    <h5 class="service-card__title">Veb dasturlash</h5>
-                    <p class="service-card__description">
-                        Savollaringizga to`liq javoblar va birinchi veb saytingizni yaratish uchun kerak bo`ladigan
-                        barcha resurslar
+                    <h5 class="service-card__title">웹 디자인 (Web Design)</h5>
+                    <p class="service-card__description">UI/UX 디자인 (UI/UX Design) 그래픽 디자인 (Graphic Design)
                     </p>
                     <a href="#" class="service-card__link">
-                        Ko`proq
+                        더 보기
                     </a>
                 </div>
             </div>
@@ -195,12 +201,12 @@
     <div class="container">
         <section id="clients" class="clients">
             <h5 class="section-subtitle">
-                Mening mijozlarim
+                나의 고객들
                 <span class="blur-line"></span>
             </h5>
             <h2 class="section-title">
-                Hurmatli mijozlarim<br>
-                men haqimda
+                존경하는 고객님들<br>
+                저에 대해
             </h2>
             <div class="client-items">
                 <div class="client-item">
@@ -212,7 +218,7 @@
                             Safarova Guli
                         </h3>
                         <p class="client-item__position">
-                            Senior (katta) uy bekasi
+                            시니어(Senior) 주부
                         </p>
                         <p class="client-item__reivew">
                             Yig'latdiz Sultonim, judayam xursandman, siz bilan baxtliman. Yaxshiyam borsiz, sizgayam
@@ -231,7 +237,7 @@
                             SHuxratov Yusuf
                         </h3>
                         <p class="client-item__position">
-                            Bo`lajak imom (qori)
+                            미래의 리더
                         </p>
                         <p class="client-item__reivew">
                             Siz va onam dunyodagi eng yaxshi ota va ona, Ko`p mehnatkash oilaparvar insonsiz, Meni
@@ -495,6 +501,3 @@
 
 </html>
 
-<!--<img src="./Images/Yusuf3.jpg" alt="Portfolio image 2" class="portfolio-item__image2">
-<img src="./Images/Yusuf2.jpg" alt="Portfolio image 3" class="portfolio-item__image3">
-<img src="./Images/Yusuf6.jpg" alt="Portfolio image 4" class="portfolio-item__image4">-->
