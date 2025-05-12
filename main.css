@@ -3,7 +3,7 @@
 .main-banner {
     background: url('back2.png') no-repeat center;
     color: white;
-    background-position: 600px;
+    background-position: 500px;
     background-size: contain;
     min-height: 600px;
 
@@ -20,8 +20,6 @@
 
 .main-section__image img {
     width: 450px;
-    border-radius: 40%;
-
 }
 
 .main-section__welcome {
