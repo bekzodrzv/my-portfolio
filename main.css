@@ -3,8 +3,8 @@
 .main-banner {
     background: url('back2.png') no-repeat center;
     color: white;
-    background-position: 500px center;
-    background-size: contain;
+    background-position: 500px;
+    background-size: cover;
     min-height: 600px;
 
 }
